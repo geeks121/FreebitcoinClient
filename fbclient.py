@@ -120,7 +120,7 @@ class Client:
         return False
 
     @check_login
-    def activate_rp_bonus(self, amount=100):
+    def activate_rp_bonus(self, amount=10): #ubah jika memenuhi syarat
         return self._activate_bonus(RewardType.Points, amount)
 
     @check_login
